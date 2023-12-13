@@ -6,6 +6,8 @@ use App\Http\Controllers\AValueController;
 use App\Http\Controllers\CpiController;
 use App\Http\Controllers\CriteriaController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\IndexController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -54,5 +56,5 @@ Route::put('/edit_value/{id}', [AValueController::class, 'edit']);
 
 //perhitungan
 Route::get('/calculate', [CpiController::class, 'index']);
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/index', [IndexController::class, 'index']);
+Route::get('/', [IndexController::class, 'index'])->name('home');

@@ -41,7 +41,7 @@
                 <div class="container-fluid">
                     <!-- Small boxes (Stat box) -->
                     <div class="row">
-                      <div class="col-lg-3 col-6">
+                      <div class="col-lg-4 col-6">
                         <!-- small box -->
                         <div class="small-box bg-info">
                           <div class="inner">
@@ -49,13 +49,13 @@
                             <p>Alternatif</p>
                           </div>
                           <div class="icon">
-                            <i class="fas fa-users fa-2x"></i>
+                            <i class="fas fa-truck fa-2x"></i>
                           </div>
                           <a href="{{ url('/alternatifs') }}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                         </div>
                       </div>
                       <!-- ./col -->
-                      <div class="col-lg-3 col-6">
+                      <div class="col-lg-4 col-6">
                         <!-- small box -->
                         <div class="small-box bg-success">
                           <div class="inner">
@@ -63,13 +63,13 @@
                             <p>Criteria</p>
                           </div>
                           <div class="icon">
-                            <i class="fa fa-truck"></i>
+                            <i class="fa fa-calendar"></i>
                           </div>
                           <a href="{{ url('/criterias') }}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                         </div>
                       </div>
                       <!-- ./col -->
-                      <div class="col-lg-3 col-6">
+                      <div class="col-lg-4 col-6">
                         <!-- small box -->
                         <div class="small-box bg-warning">
                           <div class="inner">
@@ -78,7 +78,7 @@
                             <p>Admin</p>
                           </div>
                           <div class="icon">
-                            <i class="fa fa-trash"></i>
+                            <i class="fa fa-users"></i>
                           </div>
                           <a href="{{ url('/login') }}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                         </div>
@@ -89,7 +89,35 @@
 
                     <div class="card">
                         <div class="card-header">
-                            <b>Data Tampilan SPK</b>    
+                            <b>PERANGKINGAN</b>    
+                        </div>
+
+                        <div class="row d-flex justify-between" style="width: 100%; justify-content: space-between; align-items: center; margin: 0">
+                          <form class="form" method="GET" action="{{ url('calculate') }}" class="col-md-4" style="padding: 0">
+                            <div class="form-group w-100 mb-3">
+                            </div>
+                          </form>
+                          <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered" id="table-1">
+                                    <thead>
+                                        <tr class="text-center">
+                                            <th></th>
+                                            <th>SUM</th>
+                                            <th>RANKING</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach ($sum as $alternative => $criteriaValues)
+                                            <tr class="text-center">
+                                                @foreach ($criteriaValues as $value)
+                                                    <td>{{ $value }}</td>
+                                                @endforeach
+                                            </tr>
+                                        @endforeach
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
             </section>
         @endsection
