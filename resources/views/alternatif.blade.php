@@ -18,9 +18,17 @@
                 </div>
             @endif --}}
             <div class="card">
-                <div class="card-header">
-                    <a href="" class="btn btn-primary">Tambah</a>
-                </div>
+            <div class="card-header">
+                <a href="" class="btn btn-primary">Search</a>
+                <form action="{{ route('alternatifs.search') }}" method="get" class="d-inline float-right">
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="query" placeholder="Cari...">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="submit"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
                 <div class="card-body">
                     <div class="table-responsive">
                         <table class="table table-striped" id="table-1">

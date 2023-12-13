@@ -6,9 +6,6 @@ use App\Http\Controllers\AValueController;
 use App\Http\Controllers\CpiController;
 use App\Http\Controllers\CriteriaController;
 use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\DokterController;
-use App\Http\Controllers\JadwalController;
-use App\Http\Controllers\PasienController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -35,14 +32,20 @@ Route::middleware(['auth'])->group(function(){
 });
 
 //alternatif
-Route::get('/alternatifs', [alternatifController::class, 'index']);
-Route::get('/alternatif/{id}', [alternatifController::class, 'edit']);
-Route::put('/edit_alternatif/{id}', [alternatifController::class, 'update']);
+
+Route::get('/alternatifs', [AlternatifController::class, 'index']);
+Route::get('/alternatifs/{id}', [AlternatifController::class, 'edit']);
+Route::post('/tambah_alternatifs', [AlternatifController::class, 'store'])->name('alternatifs.store');
+Route::put('/edit_alternatifs/{id}', [AlternatifController::class, 'update']);
+Route::get('/search_alternatifs', [AlternatifController::class, 'search'])->name('alternatifs.search');
+
+
 
 //criteria
 Route::get('/criterias', [CriteriaController::class, 'index']);
 Route::get('/criteria/{id}', [CriteriaController::class, 'edit']);
 Route::put('/edit_criteria/{id}', [CriteriaController::class, 'update']);
+Route::get('/search_criterias', [CriteriaController::class, 'search'])->name('criterias.search');
 
 //nilai
 Route::get('/avalue', [AValueController::class, 'index']);
