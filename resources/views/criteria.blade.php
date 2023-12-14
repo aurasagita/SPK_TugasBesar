@@ -85,6 +85,9 @@
                             </tbody>
                         </table>
                         {{ $criterias->links() }}
+                        <li class="list-group-item">
+                            <a class="btn btn-sm btn-primary" href="{{ url('/dashboard') }}">Kembali</a>
+                        </li>
                     </div>
                 </div>
             </div>

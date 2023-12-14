@@ -30,9 +30,10 @@
         <ul>
           <li><a href="#beranda">Beranda</a></li>
           <li><a href="#tentang-kami">Tentang Metode</a></li>
-          <li><a href="#sampah">Ketentuan Tugas AKhir</a></li>
+          <li><a href="#sampah">Tahapan Metode CPI</a></li>
           <li><a href="#temukan-kami">Temukan Kami</a></li>
-          <li><a href="{{ url('/login') }}" target="_blank">Login</a></li>
+          <li><a href="#gabung">Ketentuan Tugas Akhir</a></li>
+          <li><a href="{{ url('/login') }}">Login</a></li>
         </ul>
       </header>
       <div class="head-content">
@@ -90,35 +91,35 @@
     </div>
   </section>
 
-  <!-- Sampah -->
+  <!-- CPI -->
   <section id="sampah">
     <div class="sampah-container">
-      <h3>Ketentuan Tugas Akhir</h3>
+      <h3>Tahapan Metode CPI</h3>
       <div class="sampah">
         <div class="box" data-name="s1">
           <img src="assets/dist/img/kelompok.jpeg" alt="">
-          <h5>Ketentuan 1</h5>
-          <h6>Kelompok 2-3 Orang</h6>
+          <h5>Langkah 1</h5>
+          <h6>Menetukan Nilai Minimum Setiap Kriteria</h6>
         </div>
         <div class="box" data-name="s2">
           <img src="assets/dist/img/metode.jpeg" alt="">
-          <h5>Ketentuan 2</h5>
-          <h6>Menggunakan Kombinasi metode atau metode yang belum pernah diajarkan di Semester ini</h6>
+          <h5>Langkah 2</h5>
+          <h6>Normalisasi Matriks</h6>
         </div>
         <div class="box" data-name="s3">
           <img src="assets/dist/img/kasus.jpeg" alt="">
-          <h5>Ketentuan 3</h5>
-          <h6>Kasus yang diangkat minimal ada 10 kriteria dan 20 alternatif</h6>
+          <h5>Langkah 3</h5>
+          <h6>Perkalian Bobot dan Normalisasi Matriks</h6>
         </div>
         <div class="box" data-name="s4">
           <img src="assets/dist/img/cost&benefit.jpeg" alt="">
-          <h5>Ketentuan 4</h5>
-          <h6>Kriteria Terdiri Dari Cost dan benefit</h6>
+          <h5>Langkah 4</h5>
+          <h6>Jumlah Seluruh Hasil Perkalian setiap alternatif</h6>
         </div>
         <div class="box" data-name="s5">
           <img src="assets/dist/img/jurnal.jpeg" alt="">
-          <h5>Ketentuan 5</h5>
-          <h6>Kasus dan data yang digunakan mengacu dari artikel penelitian orang lain. Sehingga Hasilnya Bisa Dibandingkan jika menggunakan Metode lain Yaitu Berupa Jurnal </h6>
+          <h5>Langkah 5</h5>
+          <h6>Rangking Keputusan</h6>
         </div>
       </div>
     </div>
@@ -128,41 +129,45 @@
       <div class="preview" data-target="s1">
         <i class="fas fa-times"></i>
         <img src="assets/dist/img/kelompok.jpeg" alt="">
-        <h5>Ketentuan 1</h5>
-          <h6>Jumlah Kelompok</h6>
-        <p>Kelompok 2-3 Orang</p>
+        <h5>Langkah 1</h5>
+          <h6>Menentukan Nilai Minimum</h6>
+        <p>Menetukan Nilai Minimum Setiap Kriteria</p>
       </div>
       <div class="preview" data-target="s2">
         <i class="fas fa-times"></i>
         <img src="assets/dist/img/metode.jpeg" alt="">
-        <h5>Ketentuan 2</h5>
-          <h6>Penentuan Metode</h6>
-        <p>Menggunakan Kombinasi metode atau metode yang belum pernah diajarkan di Semester ini</p>
+        <h5>Langkah 2</h5>
+          <h6>Normalisasi Matriks</h6>
+        <p>Menentukan data positif dan negatif</p>
+        <p>Jika data positif => Nilai N / Nilai Min * 100%</p>
+        <p>Jika data negatif => Nilai Min / Nilai N * 100%</p>
+
       </div>
       <div class="preview" data-target="s3">
         <i class="fas fa-times"></i>
         <img src="assets/dist/img/kasus.jpeg" alt="">
-        <h5>Ketentuan 3</h5>
-          <h6>Penentuan Kriteria dan Alternatif</h6>
-        <p>Dari Kasus yang diangkat dari Jurnal Tiap kelompok dapat menentukan minimal ada 10 kriteria dan 20 alternatif</p>
+        <h5>Langkah 3</h5>
+          <h6>Perkalian Bobot dan Normalisasi Matriks</h6>
+        <p>Bobot * Nilai Normalisasi Matriks</p>
       </div>
       <div class="preview" data-target="s4">
         <i class="fas fa-times"></i>
         <img src="assets/dist/img/cost&benefit.jpeg" alt="">
-        <h5>Ketentuan 4</h5>
-          <h6>Penentuan</h6>
-        <p>Kriteria Terdiri Dari Cost dan benefit</p>
+        <h5>Langkah 4</h5>
+          <h6>Jumlah Seluruh Hasil Perkalian setiap alternatif</h6>
+        <p>Jumlah keseluruhan hasil dari tiap alternatif</p>
       </div>
       <div class="preview" data-target="s5">
         <i class="fas fa-times"></i>
         <img src="assets/dist/img/jurnal.jpeg" alt="">
-        <h5>Ketentuan 5</h5>
-        <h6>Penentuan Jurnal</h6>
-        <p>Kasus dan data yang digunakan mengacu dari artikel penelitian orang lain. Sehingga Hasilnya Bisa Dibandingkan jika menggunakan Metode lain Yaitu Berupa Jurnal</p>
+        <h5>Langkah 5</h5>
+        <h6>Rangking Keputusan</h6>
+        <p>Hasil Akhir yang dapat menciptakan rangking keputusan</p>
       </div>
       </div>
   </section>
 
+   
   <!-- Temukan Kami -->
   <section id="temukan-kami">
     <div class="temukan-kami-container">
@@ -173,6 +178,37 @@
     <div class="clearfix"></div>
   </section>
 
+  <!--Ketentuan Tugas Akhir-->
+  <section id="gabung">
+    <div class="gabung">
+      <div class="container">
+        <h3>Ketentuan Tugas Akhir</h3>
+        <div class="row">
+          <div class="col-12">
+            <div class="gabung-content">
+              <div class="gabung-content-kiri">
+                <h4 class="text-white">Tugas Akhir SPK </h4>
+                <p class="text-white"> Ketentuan : </p>
+                <ul class="text-white">
+                  <b>1. Jumlah Kelompok</b>
+                  <li>Kelompok 2-3 Orang</li>
+                  <b>2. Penentuan Metode</b>
+                  <li>Menggunakan Kombinasi metode atau metode yang belum pernah diajarkan di Semester ini</li>
+                  <b>3. Penentuan Kriteria dan Alternatif</b>
+                  <li>Dari Kasus yang diangkat dari Jurnal Tiap kelompok dapat menentukan minimal ada 10 kriteria dan 20 alternatif</li>
+                  <b>4. Penentuan Kriteria</b>
+                  <li>Kriteria Terdiri Dari Cost dan benefit</li>
+                  <b>5. Penentuan Jurnal</b>
+                  <li>Kasus dan data yang digunakan mengacu dari artikel penelitian orang lain. Sehingga Hasilnya Bisa Dibandingkan jika menggunakan Metode lain Yaitu Berupa Jurnal</li>
+                </ul>
+              </div>
+              <img src="assets/dist/img/daftar.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer class="bg text-center text-white">

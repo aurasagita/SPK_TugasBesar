@@ -10,7 +10,7 @@
             <div class="card">
                 <div class="card-header border-0">
             <div class="me-md-3 me-xl-5">
-                <h6><p class="mb-md-6">Selamat Datang Admin Sistem Pendukung Keputusan</p></h6>
+                <b><h5><p class="mb-md-6">Selamat Datang Admin Sistem Pendukung Keputusan</p></h5></b>
             </div>
             </div>
         </div>
@@ -89,7 +89,7 @@
 
                     <div class="card">
                         <div class="card-header">
-                            <b>PERANGKINGAN</b>    
+                            <b>HASIL PERANGKINGAN</b>    
                         </div>
 
                         <div class="row d-flex justify-between" style="width: 100%; justify-content: space-between; align-items: center; margin: 0">

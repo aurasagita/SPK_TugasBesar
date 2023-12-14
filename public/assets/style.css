@@ -354,14 +354,14 @@ header .logo{
     padding-top: 40px;
     padding-bottom: 10px;
     font-weight: 600;
-    color: #07AA14;
+    color: #1074b1;
     font-family: 'Poppins', sans-serif;
     text-align: center;
 }
 
 .gabung h3::after {
     content: "";
-    border-bottom: 5px solid #07AA14;
+    border-bottom: 5px solid #1074b1;
     width: 90px;
     display: block;
     margin: 15px auto;
@@ -375,7 +375,7 @@ header .logo{
     align-items: center;
     padding: 5rem;
     border-radius: 10px;
-    background-color: #07AA14;
+    background-color: #1074b1;
     margin-bottom: 3rem;
 }
 
