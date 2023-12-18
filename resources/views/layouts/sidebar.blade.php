@@ -2,7 +2,7 @@
       <!-- Sidebar user (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="{{asset('assets/dist/img/user2-160x160.jpg')}}" class="img-circle elevation-2" alt="User Image">
+          <img src="{{asset('assets/dist/img/Nabila.svg')}}" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
           <a href="#" class="d-block">Admin</a>
@@ -26,10 +26,10 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-               <li class="menu-header">Dashboard</li>
+               <b><li class="menu-header">Dashboard</li></b>
                <li class="{{ Request::is('/dashboard') ? 'active' : '' }}"><a class="nav-link" href="/dashboard"><i class="fas fa-fire"></i>
                        <span>Dashboard</span></a></li>
-               <li class="menu-header">Data</li>
+               <b><li class="menu-header">Data</li></b>
                {{-- <li class="{{ Request::is('admin') ? 'active' : '' }}"><a class="nav-link" href="/admin"><i class="fas fa-user"></i>
                        <span>Admin</span></a></li> --}}
                <li class="nav-item dropdown {{ Request::is('alternatifs') || Request::is('criteria') ? 'active' : '' }}">

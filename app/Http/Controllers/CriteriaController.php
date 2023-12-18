@@ -29,4 +29,19 @@ class criteriaController extends Controller
 
         return redirect('/criterias');
     }
+    public function search(Request $request)
+    {
+        $query = $request->input('query');
+
+        if ($query) {
+            $criterias = Criteria::where('type', 'like', "%$query%")
+                ->orderBy('type', 'asc')
+                ->paginate(10);
+        } else {
+            $criterias = Criteria::paginate(10);
+        }
+
+        return view('criteria', ['criterias' => $criterias, 'query' => $query]);
+    }
+
 }
